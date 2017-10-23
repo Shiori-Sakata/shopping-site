@@ -454,42 +454,64 @@ footer{
        }
        .about{
            width:100%;
-           .shop-img{
-               width:45%;
+            .shop-img{
+               width:50%;
                float:left;
+               padding:10px;
            }
-           p{
-               width:42%;
-               float:right;
+          .shop-detail{
+              text-align:left;
+              float:right;
+              width:45%;
+            p{
+               clear: both;
                padding:10px 10px 10px 0px;
                margin-bottom:0px;
            }
            a{  
-               text-align:center;
+               clear: both;
+               text-align:left;
                .more-btn{
-               clear: both;    
+                 clear: both;
+                }
            }
-           }
-       }
-       .shop-info{
+          }
+        }
+        .about::after {
+             content: '';
+             display: block;
+             clear: both;
+        }
+        .shop-info{
            width:100%;
-           .shop-img{
-               width:45%;
+            .shop-img{
+               width:50%;
                float:left;
+               padding:10px;
            }
-           p{
-               width:42%;
-               float:right;
+          .shop-detail{
+              text-align:left;
+              float:right;
+              width:45%;
+            p{
+               clear: both;
                padding:10px 10px 10px 0px;
                margin-bottom:0px;
            }
            a{  
-               text-align:center;
+               clear: both;
+               text-align:left;
                .more-btn{
-               clear: both;    
+                 clear: both;
+                }
            }
-           }
-       }
+          }
+        }
+        .shop-info::after {
+             content: '';
+             display: block;
+             clear: both;
+        }
    }
    footer{
       .container{ 
