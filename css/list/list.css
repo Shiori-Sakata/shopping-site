@@ -78,6 +78,7 @@ header .container .row {
 .item-boxes ul {
   padding-left: 0;
   margin-top: 15px;
+  margin-bottom: 15px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -99,33 +100,59 @@ header .container .row {
     .item-boxes ul .item-box .price {
       font-size: 12px;
       margin-top: 7px; }
+.item-boxes .back-btn {
+  float: right;
+  text-align: center;
+  background-color: #887f69;
+  width: 20%;
+  margin-bottom: 10px;
+  padding: 8px 0px; }
+  .item-boxes .back-btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px; }
+.item-boxes .next-btn {
+  float: left;
+  text-align: center;
+  background-color: #887f69;
+  width: 20%;
+  margin-bottom: 10px;
+  padding: 8px 0px; }
+  .item-boxes .next-btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px; }
 
-.recent-items .pc-title {
-  margin: 10px 0px;
-  width: 100%; }
-.recent-items .item-boxes ul {
-  padding-left: 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none; }
-  .recent-items .item-boxes ul .item-box {
-    width: calc( ( 100% - 4px ) / 3 );
-    box-sizing: border-box;
-    background: #ffffff;
-    margin-bottom: 2px;
-    padding: 15px; }
-    .recent-items .item-boxes ul .item-box img {
-      text-align: center;
-      margin-top: 5px;
-      margin-bottom: 0px; }
-    .recent-items .item-boxes ul .item-box .item-name {
-      font-size: 12px;
-      margin-top: 0px; }
-    .recent-items .item-boxes ul .item-box .price {
-      font-size: 12px;
-      margin-top: 7px; }
+.recent-items {
+  clear: both; }
+  .recent-items .pc-title {
+    margin: 10px 0px;
+    width: 100%; }
+  .recent-items .item-boxes ul {
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none; }
+    .recent-items .item-boxes ul .item-box {
+      width: calc( ( 100% - 4px ) / 3 );
+      box-sizing: border-box;
+      background: #ffffff;
+      margin-bottom: 2px;
+      padding: 15px; }
+      .recent-items .item-boxes ul .item-box img {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0px; }
+      .recent-items .item-boxes ul .item-box .item-name {
+        font-size: 12px;
+        margin-top: 0px; }
+      .recent-items .item-boxes ul .item-box .price {
+        font-size: 12px;
+        margin-top: 7px; }
 
 .shopping-guide .pc-title {
   margin-top: 12px;
@@ -231,7 +258,7 @@ header .container .row {
       padding: 5px; }
   .about .shop-img {
     padding: 5px 10px 0px 10px;
-    width: 90%; }
+    width: 100%; }
   .about p {
     display: block;
     padding: 0px 10px; }
@@ -252,7 +279,7 @@ header .container .row {
       padding: 5px; }
   .shop-info .shop-img {
     padding: 5px 10px 0px 10px;
-    width: 90%; }
+    width: 100%; }
   .shop-info p {
     display: block;
     padding: 0px 10px; }
@@ -318,6 +345,10 @@ footer #copyright {
       margin: 0px; }
     main .container .item-boxes ul .item-box {
       width: calc( ( 100% - 4px ) / 2 ); }
+    main .container .item-boxes .back-btn {
+      width: 40%; }
+    main .container .item-boxes .next-btn {
+      width: 40%; }
     main .container .recent-items {
       text-align: center; }
       main .container .recent-items .sp-title {
@@ -343,31 +374,49 @@ footer #copyright {
     main .container .about {
       width: 100%; }
       main .container .about .shop-img {
-        width: 45%;
-        float: left; }
-      main .container .about p {
-        width: 42%;
+        width: 50%;
+        float: left;
+        padding: 10px; }
+      main .container .about .shop-detail {
+        text-align: left;
         float: right;
-        padding: 10px 10px 10px 0px;
-        margin-bottom: 0px; }
-      main .container .about a {
-        text-align: center; }
-        main .container .about a .more-btn {
-          clear: both; }
+        width: 45%; }
+        main .container .about .shop-detail p {
+          clear: both;
+          padding: 10px 10px 10px 0px;
+          margin-bottom: 0px; }
+        main .container .about .shop-detail a {
+          clear: both;
+          text-align: left; }
+          main .container .about .shop-detail a .more-btn {
+            clear: both; }
+    main .container .about::after {
+      content: '';
+      display: block;
+      clear: both; }
     main .container .shop-info {
       width: 100%; }
       main .container .shop-info .shop-img {
-        width: 45%;
-        float: left; }
-      main .container .shop-info p {
-        width: 42%;
+        width: 50%;
+        float: left;
+        padding: 10px; }
+      main .container .shop-info .shop-detail {
+        text-align: left;
         float: right;
-        padding: 10px 10px 10px 0px;
-        margin-bottom: 0px; }
-      main .container .shop-info a {
-        text-align: center; }
-        main .container .shop-info a .more-btn {
-          clear: both; }
+        width: 45%; }
+        main .container .shop-info .shop-detail p {
+          clear: both;
+          padding: 10px 10px 10px 0px;
+          margin-bottom: 0px; }
+        main .container .shop-info .shop-detail a {
+          clear: both;
+          text-align: left; }
+          main .container .shop-info .shop-detail a .more-btn {
+            clear: both; }
+    main .container .shop-info::after {
+      content: '';
+      display: block;
+      clear: both; }
 
   footer .container #top {
     text-align: center;

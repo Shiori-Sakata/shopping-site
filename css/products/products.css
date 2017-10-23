@@ -100,6 +100,8 @@ header .container .row {
       flex: 5 5 40px;
       width: 100%;
       box-sizing: border-box; }
+      .product .products-slideshow #display-img img {
+        width: 100%; }
     .product .products-slideshow #list-img {
       flex: 2 2 10px;
       margin-left: 10px;
@@ -114,6 +116,8 @@ header .container .row {
         width: calc( ( 100% - 10px ) / 2 );
         box-sizing: border-box;
         margin-bottom: 0px; }
+        .product .products-slideshow #list-img li img {
+          width: 100%; }
   .product .color-size {
     margin: 10px 50px; }
     .product .color-size .border {
@@ -204,9 +208,9 @@ header .container .row {
         background-color: #f9f9f5; }
       .product .detail .detail-table td {
         border: solid 1px #e3e8cf;
-        text-align: center;
+        text-align: left;
         width: 70%;
-        padding: 8px 0px;
+        padding: 8px 5px;
         background-color: #ffffff; }
 
 .recent-items .pc-title {
@@ -490,31 +494,49 @@ footer #copyright {
     main .container .about {
       width: 100%; }
       main .container .about .shop-img {
-        width: 45%;
-        float: left; }
-      main .container .about p {
-        width: 42%;
+        width: 50%;
+        float: left;
+        padding: 10px; }
+      main .container .about .shop-detail {
+        text-align: left;
         float: right;
-        padding: 10px 10px 10px 0px;
-        margin-bottom: 0px; }
-      main .container .about a {
-        text-align: center; }
-        main .container .about a .more-btn {
-          clear: both; }
+        width: 45%; }
+        main .container .about .shop-detail p {
+          clear: both;
+          padding: 10px 10px 10px 0px;
+          margin-bottom: 0px; }
+        main .container .about .shop-detail a {
+          clear: both;
+          text-align: left; }
+          main .container .about .shop-detail a .more-btn {
+            clear: both; }
+    main .container .about::after {
+      content: '';
+      display: block;
+      clear: both; }
     main .container .shop-info {
       width: 100%; }
       main .container .shop-info .shop-img {
-        width: 45%;
-        float: left; }
-      main .container .shop-info p {
-        width: 42%;
+        width: 50%;
+        float: left;
+        padding: 10px; }
+      main .container .shop-info .shop-detail {
+        text-align: left;
         float: right;
-        padding: 10px 10px 10px 0px;
-        margin-bottom: 0px; }
-      main .container .shop-info a {
-        text-align: center; }
-        main .container .shop-info a .more-btn {
-          clear: both; }
+        width: 45%; }
+        main .container .shop-info .shop-detail p {
+          clear: both;
+          padding: 10px 10px 10px 0px;
+          margin-bottom: 0px; }
+        main .container .shop-info .shop-detail a {
+          clear: both;
+          text-align: left; }
+          main .container .shop-info .shop-detail a .more-btn {
+            clear: both; }
+    main .container .shop-info::after {
+      content: '';
+      display: block;
+      clear: both; }
 
   footer .container #top {
     text-align: center;
